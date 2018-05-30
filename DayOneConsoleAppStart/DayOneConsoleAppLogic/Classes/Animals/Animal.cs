@@ -28,6 +28,10 @@ namespace DayOneConsoleAppLogic
             set { name = value; }
         }
 
+        /// <summary>
+        /// Public method that takes in an int currentHunger and uses the animals currentWeight to calculate the amount of food required to be full
+        /// </summary>
+        /// <param name="currentHunger">int value about the current hunger out of ten</param>
         public void CalculateFoodAmount(int currentHunger)
         {
             if (currentHunger != 0 && currentHunger < currentWeight)
